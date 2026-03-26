@@ -1,9 +1,9 @@
 node {
-    def appDir = 'var/www/nextjs-app'
+    def appDir = '/var/www/nextjs-app'
 
     stage('CLean Workspace'){
         echo 'Cleaning Jenkins Worksapce'
-        deletDir()
+        deleteDir()
     }
 
     stage('clone repo'){
